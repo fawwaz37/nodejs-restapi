@@ -1,8 +1,10 @@
 # **Node JS Rest-API**
 
-<img src="https://i.postimg.cc/mkBmFDZ0/api.png" width="500">
+<img src="https://i.postimg.cc/Z5tYYpL5/ss2.png" width="500">
 
 Simple Rest-API With Login System, Built using MongoDB, Express.js, and Node.js
+
+Demo App : https://zekais-restapi.herokuapp.com/
 
 # Installation
 
@@ -69,21 +71,21 @@ Contact Me ([WhatsApp](https://api.whatsapp.com/send/?phone=6287715579966&text&a
 
 Then Browse http://localhost:5000 . You will see the Homepage.
 
-<img src="https://i.postimg.cc/C5wHvQqt/api-home.png" width="500">
+<img src="https://i.postimg.cc/0jz5jC3b/ss.png" width="500">
 
 # Features
 
-|     API              |  EndPoint      |
-| :--------------:     | :------------: |
-| Youtube MP3          |   /ytmp3?url=  |
-| Youtube MP4          |   /ytmp4?url=  |
-| Youtube Play         |   /ytplay?url= |
-| Random Quotes        |   /quotes      |
-| Random Fakta         |   /fakta       |
-| Random Kata Bijak    |   /bijak       |
-| Random Kata Motivasi |   /motivasi    |
-| Random Ptl           |   /ptl         |
-| Cak Lontong          |   /caklontong  |
+|     API              |  EndPoint       |  Query           |
+| :--------------:     | :------------:  | :------------:   |
+| Youtube MP3          |  /ytmp3?url=    |  url & apikey    |
+| Youtube MP4          |  /ytmp4?url=    |  url & apikey    |
+| Youtube Play         |  /ytplay?query= |  query & apikey  |
+| Random Quotes        |  /quotes        |  apikey          |
+| Random Fakta         |  /fakta         |  apikey          |
+| Random Kata Bijak    |  /bijak         |  apikey          |
+| Random Kata Motivasi |  /motivasi      |  apikey          |
+| Random Ptl           |  /ptl           |  apikey          |
+| Cak Lontong          |  /caklontong    |  apikey          |
 
 If you want to unlock Premium Feature, please contact me ([WhatsApp](https://api.whatsapp.com/send/?phone=6287715579966&text&app_absent=0))
 
@@ -96,5 +98,47 @@ If you want to unlock Premium Feature, please contact me ([WhatsApp](https://api
 | Custom Limit Apikey       |   ✔️           |
 | Custom Apikey             |   ✔️           |
 | Expired Premium User      |   ✔️           |
-| Reset All Limit every 8am |   ✔️           |
+| Reset All Limit every day 8am |   ✔️           |
 | Reset One Limit           |   ✔️           |
+
+# Deploy Heroku
+
+Go to [Heroku](https://heroku.com) and Login
+
+Create New App ( App Name For Example : abcd-api)
+
+<img src="https://i.postimg.cc/Z5T8Btw2/newapp.png" width="300">
+
+Install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+
+Open `CMD` and Login Heroku
+
+```cmd
+> heroku login
+```
+
+Initialize a git repository in a new or existing directory
+
+```cmd
+> cd nodejs-restapi
+> git init
+```
+
+Remote Your App, Use `heroku git:remote -a app-name`
+
+```cmd
+> heroku git:remote -a abcd-api
+```
+
+Commit your code to the repository and deploy it to Heroku using Git.
+
+```cmd
+> git add .
+> git commit -am "make it better"
+> git push heroku master
+```
+
+Log Success
+
+<img src="https://i.postimg.cc/j5bzy0NP/deploy.png" width="300">
+
