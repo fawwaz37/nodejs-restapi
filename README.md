@@ -16,7 +16,7 @@ Requirements
 ## Cloning this repo
 ```cmd
 > git clone https://github.com/fawwaz37/nodejs-restapi.git
-> cd todo-express-mongodb
+> cd nodejs-restapi
 ```
 Use `code .` to open file in VS Code
 ```cmd
