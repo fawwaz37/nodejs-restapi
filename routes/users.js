@@ -38,6 +38,7 @@ router.post('/register', async (req, res) => {
         if (password.length < 6 || confirmPassword < 6) {
             req.flash('error_msg', 'Password must be at least 6 characters');
             res.redirect('/users/register');
+            return
         }
         if (password === confirmPassword) {
             let checking = await checkUsername(username);

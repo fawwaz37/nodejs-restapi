@@ -3,6 +3,7 @@ const app = express();
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const expressLayout = require('express-ejs-layouts');
+const rateLimit = require("express-rate-limit");
 const passport = require('passport');
 const flash = require('connect-flash');
 
@@ -17,6 +18,15 @@ const { port } = require('./lib/settings');
 const PORT = process.env.PORT || port;
 
 connectMongoDb();
+
+app.set('trust proxy', 1);
+
+const limiter = rateLimit({
+  windowMs: 1 * 60 * 1000, 
+  max: 50, 
+  message: 'Oops too many requests'
+});
+app.use(limiter);
 
 app.set('view engine', 'ejs');
 app.use(expressLayout);
