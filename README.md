@@ -5,6 +5,7 @@
 Simple Rest-API With Login System, Built using MongoDB, Express.js, and Node.js
 
 Demo App : https://zekais-restapi.herokuapp.com/
+Full App : https://zekais-api.herokuapp.com/
 
 # Installation
 
@@ -44,7 +45,7 @@ module.exports = {
 <img src="https://i.postimg.cc/R0D16X3C/1.png" width="300">
 
 3. Create Free Cluster.
-4. Choose Cloud Provider & Region.
+4. Choose Cloud Provider & Region, Create Cluster.
 5. Select `Connect`.
 6. Add a Connection IP Address.
 <img src="https://i.postimg.cc/gk1H2MZY/5-1.png" width="500">
@@ -52,7 +53,7 @@ module.exports = {
 7. Create a Database User
 <img src="https://i.postimg.cc/T1zCLGPc/5-2.png" width="500">
 
-8. Choose Connect Your Application
+8. Connect Your Application
 9. Change `<password>` with Your Password Database User `step 7`
 <img src="https://i.postimg.cc/6pW4wgW2/db.png" width="500">
 10. Copy and Paste in `settings.js`
