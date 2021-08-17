@@ -40,8 +40,11 @@ module.exports = {
 ```
 
 `port`: PORT localhost.
-`recaptcha_key_1`: reCaptcha Key
-`recaptcha_key_2`: reCaptcha Key
+
+`recaptcha_key_1`: reCaptcha Key.
+
+`recaptcha_key_2`: reCaptcha Key.
+
 `dbURI`: Connection String MongoDb. 
 
 ## How to Get recaptcha_key
