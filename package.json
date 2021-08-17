@@ -1,0 +1,46 @@
+{
+  "name": "nodejs-restapi",
+  "version": "1.0.0",
+  "description": "Rest-API - Express JS",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "mongodb",
+    "nodejs",
+    "express",
+    "restapi"
+  ],
+  "author": "zekais",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fawwaz37/nodejs-restapi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fawwaz37/nodejs-restapi/issues"
+  },
+  "homepage": "https://github.com/fawwaz37/nodejs-restapi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "crypto": "^1.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-rate-limit": "^5.3.0",
+    "express-recaptcha": "^5.0.2",
+    "express-session": "^1.17.2",
+    "fs-extra": "^10.0.0",
+    "moment-timezone": "^0.5.33",
+    "mongoose": "^5.13.5",
+    "node-schedule": "^2.0.0",
+    "nodemon": "^2.0.12",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "yt-search": "^2.10.0",
+    "ytdl-core": "^4.9.0"
+  }
+}

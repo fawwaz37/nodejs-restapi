@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+    <a class="navbar-brand" href="/">Zekais-API</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a href="/" class="nav-link">Home</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+
+        <% if (user) { %>
+          <li class="nav-item">
+            <a href="/docs" class="nav-link">
+              Docs
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/users/logout" class="nav-link">
+              Logout
+            </a>
+          </li>
+        <% } else { %>
+          <li class="nav-item">
+            <a href="/users/login" class="nav-link">
+              Login
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/users/register" class="nav-link">
+              Register
+            </a>
+          </li>
+        <% } %>
+        
+      </ul>
+    </div>
+</nav>

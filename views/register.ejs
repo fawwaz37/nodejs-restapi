@@ -1,0 +1,31 @@
+<div class="row justify-content-md-center" style="margin-top: 30px">
+    <div class="col-md-4">
+
+        <form method="POST" action="/users/register">
+            <div class="form-group">
+                <label for="nameInput">Userame</label>
+                <input name="username" type="text" class="form-control" id="nameInput" placeholder="Enter Username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="passwordInput">Password</label>
+                <input name="password" type="password" class="form-control" id="passwordInput" placeholder="Password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPasswordInput">Confirm Password</label>
+                <input name="confirmPassword" type="password" class="form-control" id="confirmPasswordInput"
+                    placeholder="Re-enter your password here" required>
+            </div>
+            <div class="form-group">
+                <%- recaptcha %>
+            </div>
+            <button type="submit" class="btn btn-dark">Register Account</button>
+        </form>
+        <div>
+            <p> </p>
+            <p>Already have an account?</p>
+            <a class="btn btn-dark" href="/users/login">Login</a>
+        </div>
+    </div>
+</div>
