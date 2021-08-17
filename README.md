@@ -30,15 +30,23 @@ Edit the required value in folder `lib` file `settings.js`.
 
 ```js
 module.exports = {
-    port: '5000', // http://localhost:5000
+    port: '5000',
+    limitCount: 0,
+    recaptcha_key_1: '',
+    recaptcha_key_2: '',
     // ex Mongodb Atlas : mongodb+srv:/xxx
-    dbURI: '' 
-}
+    dbURI: ''
+};
 ```
 
 `port`: PORT localhost.
-
+`recaptcha_key_1`: reCaptcha Key
+`recaptcha_key_2`: reCaptcha Key
 `dbURI`: Connection String MongoDb. 
+
+## How to Get recaptcha_key
+
+Contact Me ([WhatsApp](https://api.whatsapp.com/send/?phone=6287715579966&text&app_absent=0)) How to get Recaptcha Key
 
 ## How to Get Mongodb URI
 1. Sign In [Mongodb](https://www.mongodb.com/)
