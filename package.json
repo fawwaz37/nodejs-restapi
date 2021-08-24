@@ -34,6 +34,7 @@
     "express-recaptcha": "^5.0.2",
     "express-session": "^1.17.2",
     "fs-extra": "^10.0.0",
+    "memorystore": "^1.6.6",
     "moment-timezone": "^0.5.33",
     "mongoose": "^5.13.5",
     "node-schedule": "^2.0.0",

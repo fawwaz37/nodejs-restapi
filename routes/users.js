@@ -43,24 +43,23 @@ router.post('/register', recaptcha.middleware.verify, captchaRegister, async (re
         let {username, password, confirmPassword } = req.body;
         if (password.length < 6 || confirmPassword < 6) {
             req.flash('error_msg', 'Password must be at least 6 characters');
-            res.redirect('/users/register');
-            return
+            return res.redirect('/users/register');
         }
         if (password === confirmPassword) {
             let checking = await checkUsername(username);
             if(checking) {
                 req.flash('error_msg', 'A user with the same Username already exists');
-                res.redirect('/users/register');
+                return res.redirect('/users/register');
             } else {
                 let hashedPassword = getHashedPassword(password);
                 let apikey = randomText(8);
                 addUser(username, hashedPassword, apikey);
                 req.flash('success_msg', 'You are now registered and can login');
-                res.redirect('/users/login');
+                return res.redirect('/users/login');
             }
         } else {
             req.flash('error_msg', 'Password does not match.');
-            res.redirect('/users/register');
+            return res.redirect('/users/register');
         }
     } catch(err) {
         console.log(err);
@@ -69,6 +68,7 @@ router.post('/register', recaptcha.middleware.verify, captchaRegister, async (re
 
 router.get('/logout', (req,res) => {
     req.logout();
+    req.flash('success_msg', 'logout success');
     res.redirect('/users/login');
 });
 

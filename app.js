@@ -6,6 +6,7 @@ const expressLayout = require('express-ejs-layouts');
 const rateLimit = require("express-rate-limit");
 const passport = require('passport');
 const flash = require('connect-flash');
+const MemoryStore = require('memorystore')(session);
 
 const apiRouters = require('./routes/api');
 const userRouters = require('./routes/users');
@@ -35,7 +36,11 @@ app.use(express.static('public'));
 app.use(session({
   secret: 'secret',  
   resave: true,
-  saveUninitialized: true
+  saveUninitialized: true,
+  cookie: { maxAge: 86400000 },
+  store: new MemoryStore({
+    checkPeriod: 86400000
+  }),
 }));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
