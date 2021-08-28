@@ -24,7 +24,7 @@ app.set('trust proxy', 1);
 
 const limiter = rateLimit({
   windowMs: 1 * 60 * 1000, 
-  max: 50, 
+  max: 100, 
   message: 'Oops too many requests'
 });
 app.use(limiter);
