@@ -1,12 +1,12 @@
 # **Node JS Rest-API**
 
-<img src="https://i.postimg.cc/Z5tYYpL5/ss2.png" width="500">
+<img src="https://i.postimg.cc/KjqrWcc2/zekais-api.png" width="500">
 
 Simple Rest-API With Login System, Built using MongoDB, Express.js, and Node.js
 
 Demo App : https://zekais-restapi.herokuapp.com/
 
-Full App : https://zekais-api.herokuapp.com/
+Rest-Api : https://zekais-api.herokuapp.com/
 
 # Installation
 
@@ -84,7 +84,7 @@ Contact Me ([WhatsApp](https://api.whatsapp.com/send/?phone=6287715579966&text&a
 
 Then Browse http://localhost:5000 . You will see the Homepage.
 
-<img src="https://i.postimg.cc/0jz5jC3b/ss.png" width="500">
+<img src="https://i.postimg.cc/d1J2tZLF/landingpage.png" width="500">
 
 # Features
 
@@ -105,14 +105,16 @@ If you want to unlock Premium Feature, please contact me ([WhatsApp](https://api
 |     Premium               |  Availability  |
 | :--------------:          | :------------: |
 | Premium User              |   ✔️           |
+| Expired Premium User      |   ✔️           |
 | Added Premium Apikey      |   ✔️           |
 | Delete Premium Apikey     |   ✔️           |
 | Limit Apikey              |   ✔️           |
 | Custom Limit Apikey       |   ✔️           |
 | Custom Apikey             |   ✔️           |
 | Expired Premium User      |   ✔️           |
-| Reset All Limit every day 8am |   ✔️           |
-| Reset One Limit           |   ✔️           |
+| Reset Manual All Limit    |   ✔️           |
+| Reset One Limit Apikey    |   ✔️           |
+| Photooxy                  |   ✔️           |
 
 # Deploy Heroku
 
