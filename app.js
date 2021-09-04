@@ -76,8 +76,26 @@ app.get('/docs', isAuthenticated, async (req, res) => {
   });
 });
 
+app.get('/price', (req, res) => {
+  res.render('buyFull', {
+    layout: 'layouts/main'
+  })
+})
+
+app.get('/premium', (req, res) => {
+  res.render('buyFull', {
+    layout: 'layouts/main'
+  })
+})
+
 app.use('/api', apiRouters);
 app.use('/users', userRouters);
+
+app.use(function (req, res, next) {
+  res.status(404).render('notFound', {
+    layout: 'layouts/main'
+  })
+});
 
 app.set('json spaces', 4);
 

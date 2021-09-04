@@ -111,7 +111,6 @@ If you want to unlock Premium Feature, please contact me ([WhatsApp](https://api
 | Limit Apikey              |   ✔️           |
 | Custom Limit Apikey       |   ✔️           |
 | Custom Apikey             |   ✔️           |
-| Expired Premium User      |   ✔️           |
 | Reset Manual All Limit    |   ✔️           |
 | Reset One Limit Apikey    |   ✔️           |
 | Photooxy                  |   ✔️           |
