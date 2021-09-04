@@ -114,6 +114,9 @@ If you want to unlock Premium Feature, please contact me ([WhatsApp](https://api
 | Reset Manual All Limit    |   ✔️           |
 | Reset One Limit Apikey    |   ✔️           |
 | Photooxy                  |   ✔️           |
+| Request (Total, Today)    |   ✔️           |
+| Visitor, Total User       |   ✔️           |
+| Pricing Section           |   ✔️           |
 
 # Deploy Heroku
 
