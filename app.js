@@ -92,9 +92,11 @@ app.use('/api', apiRouters);
 app.use('/users', userRouters);
 
 app.use(function (req, res, next) {
-  res.status(404).render('notFound', {
-    layout: 'layouts/main'
-  })
+  if (res.statusCode == '200') {
+    res.render('notfound', {
+      layout: 'layouts/main'
+    });
+  }
 });
 
 app.set('json spaces', 4);
