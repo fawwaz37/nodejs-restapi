@@ -7,6 +7,7 @@ const rateLimit = require("express-rate-limit");
 const passport = require('passport');
 const flash = require('connect-flash');
 const MemoryStore = require('memorystore')(session);
+const compression = require('compression');
 
 const apiRouters = require('./routes/api');
 const userRouters = require('./routes/users');
@@ -21,6 +22,7 @@ const PORT = process.env.PORT || port;
 connectMongoDb();
 
 app.set('trust proxy', 1);
+app.use(compression())
 
 const limiter = rateLimit({
   windowMs: 1 * 60 * 1000, 
